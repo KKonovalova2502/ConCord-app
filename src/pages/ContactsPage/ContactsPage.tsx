@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
+
 import { useEffect } from 'react';
 import { fetchContacts } from '../../redux/contacts/operations';
 import css from './ContactsPage.module.css';
@@ -8,11 +8,12 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import SearchBox from '../../components/SearchBox/SearchBox';
 import Loader from '../../components/Loader/Loader';
 import ContactList from '../../components/ContactList/ContactList';
+import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 
 export default function App() {
-  const dispatch = useDispatch();
-  const loading = useSelector(selectLoading);
-  const error = useSelector(selectError);
+  const dispatch = useAppDispatch();
+  const loading = useAppSelector(selectLoading);
+  const error = useAppSelector(selectError);
 
   useEffect(() => {
     dispatch(fetchContacts());

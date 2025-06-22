@@ -1,6 +1,13 @@
 import css from './ConfirmDeleteModal.module.css';
 
-const ConfirmDeleteModal = ({ isOpen, onClose, onConfirm, contactName }) => {
+interface ConfirmDeleteModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onConfirm: () => void;
+  contactName: string;
+}
+
+const ConfirmDeleteModal = ({ isOpen, onClose, onConfirm, contactName }:ConfirmDeleteModalProps) => {
   if (!isOpen) return null;
 
   return (
