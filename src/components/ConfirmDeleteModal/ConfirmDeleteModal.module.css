@@ -1,0 +1,89 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: #2a2b38;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  border-radius: 8px;
+  padding: 40px 24px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+  text-align: center;
+  color: #c4c3ca;
+  animation: fadeIn 0.3s ease;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  color: #ffeba7;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.button {
+  flex: 1;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 20px;
+  border-radius: 4px;
+  transition: all 200ms linear;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.confirm {
+  background-color: #ff4d4f;
+  color: #ffffff;
+}
+
+.confirm:hover,
+.confirm:focus {
+  background-color: #1f2029;
+  color: #ff4d4f;
+  border: 1px solid #ff4d4f;
+}
+
+.cancel {
+  background-color: #1f2029;
+  color: #ffeba7;
+  border: 1px solid #ffeba7;
+}
+
+.cancel:hover,
+.cancel:focus {
+  background-color: #ffeba7;
+  color: #1f2029;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

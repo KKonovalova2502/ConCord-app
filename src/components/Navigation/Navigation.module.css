@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.link {
+  font-weight: 600;
+  font-size: 16px;
+  color: #c4c3ca;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.link:hover,
+.link:focus {
+  color: #ffeba7;
+  background-color: rgba(255, 235, 167, 0.1);
+}
+
+.active {
+  color: #1f2029;
+  background-color: #ffeba7;
+}

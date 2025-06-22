@@ -1,0 +1,80 @@
+.form {
+  width: 440px;
+  max-width: 100%;
+
+  background-color: #2a2b38;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  border-radius: 8px;
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.fieldgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input {
+  padding: 13px 20px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  outline: none;
+  color: #c4c3ca;
+  background-color: #1f2029;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+}
+
+.input:focus {
+  border: 1px solid #ffeba7;
+}
+
+.label {
+  text-align: left;
+}
+
+.error {
+  text-align: right;
+}
+
+.btn {
+  border-radius: 4px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 200ms linear;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  background-color: #ffeba7;
+  color: #1f2029;
+  box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+}
+.btn:active,
+.btn:focus {
+  background-color: #1f2029;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+  border: 1px solid #ffeba7;
+}
+.btn:hover {
+  background-color: #1f2029;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+  border: 1px solid #ffeba7;
+}

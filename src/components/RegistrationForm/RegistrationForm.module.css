@@ -1,0 +1,59 @@
+.form {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 40px 24px;
+  background-color: #2a2b38;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(21, 21, 21, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #c4c3ca;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffeba7;
+}
+
+.label input {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f2029;
+  color: #f0e9d2;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.label input:focus {
+  background-color: #252633;
+  box-shadow: 0 0 0 2px #ffeba7;
+}
+
+.registerBtn {
+  padding: 12px 18px;
+  background-color: #ffeba7;
+  color: #2a2b38;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.registerBtn:hover {
+  background-color: #ffe27a;
+  color: #1c1c24;
+}
