@@ -1,80 +1,88 @@
-# 📇 Contact Book App
+# 📇 ConCord App
+
+---
 
 ## 🇺🇦 Українська версія
 
 ### 📖 Опис проєкту
-Це **вебзастосунок «Книга контактів»**, розроблений на базі **React** та **TypeScript**. Застосунок дозволяє:
-- реєструватися й логінитися,
-- переглядати список контактів,
-- додавати й видаляти контакти,
-- фільтрувати список контактів по імені,
-- підтверджувати видалення через модальне вікно,
-- залишатися у системі навіть після оновлення сторінки завдяки `redux-persist`.
+**ConCord App** — це застосунок для управління контактами, створений на **React** і **TypeScript**.
 
----
+### ✅ Основний функціонал
+- 🔐 Реєстрація й логін користувачів
+- 📋 Перегляд, додавання, редагування й видалення контактів
+- 🔍 Фільтрація контактів по імені та по номеру
+- ⚠️ Підтвердження видалення у модальному вікні
+- 💾 Збереження сесії при оновленні сторінки (`redux-persist`)
 
-### 🛠 Технології
-- **React + TypeScript**
-- **Redux Toolkit** для управління станом
-- **redux-persist** для збереження сесії
-- **Axios** для HTTP-запитів
-- **React Router** для маршрутизації
-- **CSS Modules** для стилізації
-- **Vite** для швидкої розробки
+### 🛠 Використані технології
+- React + TypeScript
+- Redux Toolkit для управління станом
+- redux-persist для збереження сесії
+- Axios для HTTP-запитів 
+- React Router для навігації 
+- CSS Modules для стилізації 
+- Vite для швидкої розробки й білду
 
----
-
-### 🚀 Як запускати
+### 🚀 Як запустити
 1. Клонуй репозиторій:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-
+    ```bash
+    git clone https://github.com/your-username/your-repo.git
+    ```
 2. Встанови залежності:
-  ```bash
-  npm install
+    ```bash
+    npm install
+    ```
+3. Запусти застосунок:
+    ```bash
+    npm run dev
+    ```
+4. Відкрий у браузері:
+    ```bash
+    http://localhost:5173
+    ```
 
-3. Запусти локально:
-  ```bash
-  npm run dev
+---
 
-4. Відкрий у браузері http://localhost:5173
+## 🇬🇧 English Version
 
-**## 🇬🇧 English version**
+### 📖 Project Description
+**ConCord App** is a contact management application built with **React** and **TypeScript**.
 
-📖 Project Description
-This is a Contact Book web application built with React and TypeScript. It allows you to:
-  ~ register and log in,
-  ~ view a list of contacts,
-  ~ add and delete contacts,
-  ~ filter contacts by name,
-  ~ confirm deletions via a modal,
-  ~ stay signed in after page refresh using redux-persist.
+### ✅ Key Features
+- 🔐 User registration and login
+- 📋 View, add, edit, and delete contacts
+- 🔍 Filter contacts by name and by number
+- ⚠️ Confirm deletions via a modal
+- 💾 Persistent session on page refresh (`redux-persist`)
 
-🛠 Technologies
-
+### 🛠 Tech Stack
 - React + TypeScript
 - Redux Toolkit for state management
 - redux-persist for session persistence
 - Axios for HTTP requests
-- React Router for routing
+- React Router for navigation
 - CSS Modules for styling
-- Vite for fast local development
+- Vite for fast development and builds
 
-🚀 Getting Started
-
+### 🚀 Getting Started
 1. Clone the repository:
-  ```bash
-  git clone https://github.com/your-username/your-repo.git
-
+    ```bash
+    git clone https://github.com/your-username/your-repo.git
+    ```
 2. Install dependencies:
-  ```bash
-  npm install
-
+    ```bash
+    npm install
+    ```
 3. Run the app:
-  ```bash
-  npm run dev
+    ```bash
+    npm run dev
+    ```
+4. Open in your browser:
+    ```bash
+    http://localhost:5173
+    ```
 
-4. Open http://localhost:5173 in your browser
+---
 
-✨ Feel free to contribute or report issues.
-Happy coding! 🎉
+✨ **Contributions and feedback are welcome!**  
+Happy coding 🎉
