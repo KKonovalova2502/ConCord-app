@@ -12,7 +12,7 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import filtersReducer from './filters/slice';
-import authReducer from './auth/slice';
+import authReducer from './auth/slice.ts';
 
 const persistConfig = {
   key: 'user-token',

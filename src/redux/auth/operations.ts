@@ -1,7 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import type { AuthResponse, RefreshResponse, UserLoginValues, UserRegistrationValues } from '../../types/Auth';
-import type { RootState } from '../store';
+import type { AuthState } from './slice';
+
 
 axios.defaults.baseURL = 'https://connections-api.goit.global/';
 const setAuthHeader = (value:string) => {
@@ -28,7 +29,7 @@ export const logout = createAsyncThunk('auth/logout', async () => {
 export const refreshUser = createAsyncThunk(
   'auth/refresh',
   async (_, thunkApi) => {
-    const reduxState = thunkApi.getState() as RootState;
+    const reduxState = thunkApi.getState() as {auth: AuthState};
     setAuthHeader(`Bearer ${reduxState.auth.token}`);
 
     const res = await axios.get<RefreshResponse>('/users/current');
@@ -36,7 +37,7 @@ export const refreshUser = createAsyncThunk(
   },
   {
     condition: (_, thunkApi) => {
-      const reduxState = thunkApi.getState() as RootState;
+      const reduxState = thunkApi.getState() as  {auth: AuthState};
       return reduxState.auth.token !== null;
     },
   },

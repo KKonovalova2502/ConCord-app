@@ -46,7 +46,7 @@ const ContactList = () => {
         isOpen={modalOpen}
         onClose={handleCancel}
         onConfirm={handleConfirmDelete}
-        contactName={contactToDelete?.name}
+        contactName={contactToDelete?.name || ''}
       />
     </>
   );
