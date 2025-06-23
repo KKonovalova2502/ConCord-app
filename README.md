@@ -39,7 +39,7 @@
 
 4. Відкрий у браузері http://localhost:5173
 
-## 🇬🇧 English version
+**## 🇬🇧 English version**
 
 📖 Project Description
 This is a Contact Book web application built with React and TypeScript. It allows you to:
